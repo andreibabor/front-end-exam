@@ -19,6 +19,7 @@
     <link rel="shortcut icon" href="{{ settings.favicon | img_url: 'master' }}" type="image/x-icon" />
   {% endif %}
 
+  {% include 'buddha-megamenu' %}
   {{ content_for_header }}
 
   {{ 'theme.css' | asset_url | stylesheet_tag }}
